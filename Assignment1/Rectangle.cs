@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assignment1
 {
-    class Rectangle
+    public class Rectangle
     {
         private int Length;
         private int Width;
@@ -25,14 +25,14 @@ namespace Assignment1
             return this.Length;
         }
         public int SetLength(int length) {
-            this.Length = length;
+            if(length > 0) this.Length = length;
             return this.Length;
         }
         public int GetWidth() {
             return this.Width;
         }
         public int SetWidth(int width) {
-            this.Width = width;
+            if(width > 0) this.Width = width;
             return this.Width;
         }
         public int GetPerimeter() {
